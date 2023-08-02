@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 150px;
+                height: 150px;
+                background-color: rgb(53, 228, 179);
+                border: 2px solid black;
+                /* border-radius: 0px 50%;   for leaf */
+                border-radius: 50%;
+                margin-top: 30px;
+                
+            }
+            .box:hover{
+                /* height: 200px;
+                width: 200px; */
+                transition:height 2s;
+                transform: scale(0.5);
+                border-radius: 0px 50%;
+                transition-delay: 2s;
+            }
+            .mybutton{
+                background-color: rgb(104, 202, 240);
+                color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                height: 30px;
+                width: 50px;
+            }
+            .mybutton:hover{
+                background-color: rgb(34, 121, 171);
+                font-size: larger;
+                width: 70px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <button class="mybutton">Home</button>
+
+
+        <div class="box"> </div>
+    </body>
+</html>
