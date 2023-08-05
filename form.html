@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+                width: fit-content;
+                padding-top: 60px;
+            }
+
+            body{
+                /* background-color: rgb(182, 226, 240); */
+                font-size: large;
+                background-image: url(https://therenewablegeneration.com/wp-content/uploads/2020/08/Textbooks.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .left{
+                float: left;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            
+            .right{
+                float: right;
+            }
+                
+        </style>
+
+    </head>
+    <body>
+        <center>
+        <form>
+            <!-- required
+            readonly
+            disabled -->
+            <fieldset>
+                <legend style="font-family:fantasy; padding-bottom: 10px;">Personal details</legend>
+            <label class="left" for="name">Name:</label>
+            <input minlength="3" type="text" id="name" class="right" placeholder="Enter full name">
+            <br><br>
+
+            <label class="left" for="mail">E-mail:</label>
+            <input type="email" id="mail" class="right" placeholder="Enter your email">
+            <br><br>
+
+            <label class="left" for="pass">Password:</label>
+            <input type="password" id="pass" class="right" placeholder="Enter strong password">
+            <br><br>
+            
+            <label class="left">Phone.no</label>
+            <input type="tel" pattern="[0-9]{10}" class="right" placeholder="Enter your mobile no.">
+            <br><br>
+            
+            <label class="left">Gender: </label>
+            <div class="right">
+            <label>Male</label>
+            <input type="radio" id="male" name="gender">
+            <label >Female</label>
+            <input type="radio" id="female" name="gender" >
+        </div>
+            <br><br>
+
+            <label class="left">Subjects: </label>
+            <div class="right">
+            <label>Science</label>
+            <input type="checkbox" id="sci">
+            <label>Maths</label>
+            <input type="checkbox" id="math">
+            <label>Biology</label>
+            <input type="checkbox" id="bio">
+        </div>
+            <br><br>
+
+            <label class="left">Branch:</label>
+            
+            <select class="right">
+                <optgroup label="section 1">
+                <option>Information Technology</option>
+                <option>Computer Science</option>
+                <option>Artificial Intelligence</option>
+                </optgroup>
+                <optgroup label="section 2">
+                <option>CE</option>
+                <option>ME</option>
+                <option>EE</option>
+                </optgroup>
+            </select>
+            <br><br>
+           
+            <label class="left">Date of Birth</label>
+            <input type="date" class="right">
+            <br><br>
+            
+            <label class="left">Upload marksheet: </label>
+            <input type="file"  class="right" >
+            <br><br>
+            
+            <!-- <input type="image" src="https://www.thewowstyle.com/wp-content/uploads/2015/01/Tomorrowland-Belgium.jpg"; style="height: 120px; width: 150px;">
+            <br> -->
+
+            <input type="submit" value="Submit" style="background-color: rgb(240, 231, 188); padding: 5px; font-family:cursive;">
+            <input type="reset" style="background-color: rgb(240, 231, 188); padding: 5px; margin-left: 10px; font-family:cursive;">
+        </fieldset>
+        </form>
+    </center>
+
+    </body>
+</html>
